@@ -389,11 +389,15 @@ ul {
     
 }
 
+.modal-input__box {
+    position: relative;
+}
+
 .form-icon {
     position: absolute;
     left: 15px;
-    bottom: 20px;
-    transform: translateY(50%);
+    top: 50%;
+    transform: translateY(-50%);
     
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -448,8 +452,8 @@ ul {
 }
 
 .coment {
-    min-width: 448px;
-    min-height: 120px;
+    width: 448px;
+    height: 120px;
     padding-left: 16px;
     padding-top: 12px;
     
@@ -461,6 +465,8 @@ ul {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+
+    resize: none;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
